@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KB Lava Jato</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #f7f7f7;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .logo {
+      max-height: 80px;
+    }
+
+    .hero {
+      width: 100%;
+      max-height: 500px;
+      overflow: hidden;
+    }
+
+    .hero img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .intro, .servicos, .sobre, .galeria, .avaliacoes, .contato, .agendamento {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .intro h1, .servicos h2, .sobre h2, .galeria h2, .avaliacoes h2, .contato h2, .agendamento h2 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .buttons a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .buttons a.instagram {
+      background-color: #C13584;
+    }
+
+    .buttons a:hover {
+      opacity: 0.9;
+    }
+
+    .servicos ul {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: 20px auto 0 auto;
+      text-align: left;
+    }
+
+    .servicos ul li {
+      background: #f0f0f0;
+      margin: 10px 0;
+      padding: 15px;
+      border-left: 5px solid #c0392b;
+      font-size: 1.1em;
+    }
+
+    .galeria .fotos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .galeria .fotos img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .avaliacoes p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .contato form, .agendamento form {
+      max-width: 500px;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contato input, .contato textarea, .agendamento input {
+      padding: 15px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contato button, .agendamento button {
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 1.1em;
+      cursor: pointer;
+      border-radius: 5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .footer-content {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .footer-contact, .footer-map {
+      margin-bottom: 20px;
+    }
+
+    .footer-contact a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="img/1.png" alt="KB Lava Jato" class="logo" />
+    <nav>
+      <a href="#intro">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#contato">Contato</a>
+      <a href="#agendamento">Agendamento</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="img/2.png" alt="Banner KB Lava Jato" />
+  </section>
+
+  <section class="intro" id="intro">
+    <h1>Bem-vindo ao KB Lava Jato</h1>
+    <p>Especialistas em lavagem automotiva de qualidade: simples, completa, detalhada e polimento profissional.</p>
+    <div class="buttons">
+      <a href="https://wa.me/558394147741" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://instagram.com/kevin.ribeirod" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
+    </div>
+  </section>
+
+  <section class="sobre" id="sobre">
+    <h2>Sobre o KB Lava Jato</h2>
+    <p>O <strong>KB Lava Jato</strong> nasceu com o propósito de oferecer um atendimento diferenciado e serviços de qualidade para quem valoriza o cuidado com seu veículo. Atuamos com compromisso, dedicação e usamos produtos das melhores marcas do mercado como Vonixx e outras referências do setor.</p>
+    <p>Estamos localizados em uma estrutura prática e eficiente, montada com barraca na rua, que permite um atendimento ágil e completo. Cada cliente é atendido com atenção especial, seja em lavagens rápidas ou detalhadas.</p>
+    <p>Nosso diferencial está no cuidado com os detalhes e no atendimento humanizado, sempre prezando pela satisfação total de quem confia seu carro ou moto aos nossos serviços.</p>
+  </section>
+
+  <section class="servicos" id="servicos">
+    <h2>Nossos Serviços</h2>
+    <ul>
+      <li><strong>Lavagem Simples:</strong> Remoção básica de sujeiras externas com jato d'água e shampoo neutro.</li>
+      <li><strong>Lavagem Completa:</strong> Lavagem externa e interna com aspiração, painel, vidros e rodas.</li>
+      <li><strong>Lavagem Detalhada:</strong> Higienização minuciosa de cada canto do veículo, ideal para manutenção completa.</li>
+      <li><strong>Polimento:</strong> Restauração do brilho da pintura com ceras especiais e técnica profissional.</li>
+    </ul>
+  </section>
+
+  <section class="galeria" id="galeria">
+    <h2>Galeria de Fotos</h2>
+    <p>Confira alguns momentos do nosso dia a dia e veja a qualidade do nosso serviço.</p>
+    <div class="fotos">
+      <img src="img/3.jpg" alt="Lavagem de carro no KB Lava Jato" />
+      <img src="img/4.jpg" alt="Motocicleta sendo lavada" />
+      <img src="img/5.jpg" alt="Produtos automotivos" />
+      <img src="img/6.jpg" alt="Área externa com veículos aguardando" />
+    </div>
+  </section>
+
+  <section class="avaliacoes" id="avaliacoes">
+    <h2>Deixe sua Avaliação</h2>
+    <p>Gostou do nosso serviço? Clique no botão abaixo para deixar sua opinião no Google Forms:</p>
+    <div class="buttons">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRjXz0QMM3ky2I3QoP5Y0Z0Te2xnO6kTrn_slBahCucvTYkw/viewform?usp=header" target="_blank">
+        <i class="fa-solid fa-pen-to-square"></i> Avaliar
+      </a>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <h2>Fale Conosco</h2>
+    <p>Preencha abaixo para falar direto pelo WhatsApp!</p>
+    <form id="formulario">
+      <input type="text" id="nome" placeholder="Seu nome" required />
+      <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+      <button type="submit"><i class="fa-brands fa-whatsapp"></i> Enviar via WhatsApp</button>
+    </form>
+  </section>
+
+  <!-- Nova seção de agendamento -->
+  <section class="agendamento" id="agendamento">
+    <h2>Agende seu Serviço</h2>
+    <p>Escolha a data e hora que deseja e envie seu pedido de agendamento via WhatsApp.</p>
+    <form id="form-agendamento">
+      <input type="text" id="agendamento-nome" placeholder="Seu nome" required />
+      <input type="tel" id="agendamento-telefone" placeholder="Seu telefone" pattern="[0-9\s()+-]{8,}" required />
+      <input type="date" id="agendamento-data" required />
+      <input type="time" id="agendamento-hora" required />
+      <button type="submit"><i class="fa-brands fa-whatsapp"></i> Enviar Agendamento</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-contact">
+        <h3>Contato</h3>
+        <p>
+          <a href="https://wa.me/558394147741" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> (83) 9 9414-7741
+          </a>
+        </p>
+        <p>
+          <a href="https://instagram.com/kevin.ribeirod" target="_blank">
+            <i class="fa-brands fa-instagram"></i> @kevin.ribeirod
+          </a>
+        </p>
+      </div>
+      <p style="margin-top: 20px; font-size: 0.9em;">&copy; 2025 KB Lava Jato. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Formulário contato WhatsApp
+    document.getElementById('formulario').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const nome = document.getElementById('nome').value.trim();
+      const mensagem = document.getElementById('mensagem').value.trim();
+      const texto = encodeURIComponent(`Olá, me chamo ${nome} e ${mensagem}`);
+      window.open(`https://wa.me/558394147741?text=${texto}`, '_blank');
+    });
+
+    // Formulário agendamento WhatsApp
+    document.getElementById('form-agendamento').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const nome = document.getElementById('agendamento-nome').value.trim();
+      const telefone = document.getElementById('agendamento-telefone').value.trim();
+      const data = document.getElementById('agendamento-data').value;
+      const hora = document.getElementById('agendamento-hora').value;
+
+      // Formatando data no formato DD/MM/YYYY
+      const dataFormatada = new Date(data).toLocaleDateString('pt-BR');
+
+      const texto = encodeURIComponent(
+        `Olá, gostaria de agendar um serviço.\nNome: ${nome}\nTelefone: ${telefone}\nData: ${dataFormatada}\nHora: ${hora}`
+      );
+
+      window.open(`https://wa.me/558394147741?text=${texto}`, '_blank');
+    });
+  </script>
+</body>
+</html>
